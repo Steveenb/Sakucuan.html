@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakuCuan - Atur Keuangan, Mulai Bisnis, & Dapatkan Cuan!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0 flex items-center space-x-2">
+                    <!-- Logo -->
+                    <img src="logo2.png" alt="Logo SakuCuan" class="h-8 w-8">
+                    <!-- Nama Brand -->
+                    <span class="text-xl font-bold text-red-800">SakuCuan</span>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                    <a href="#home" class="text-red-800 px-3 py-2 text-sm font-medium">Beranda</a>
+                    <a href="#products" class="text-gray-600 hover:text-red-800 px-3 py-2 text-sm font-medium">Produk</a>
+                    <a href="#umkm" class="text-gray-600 hover:text-red-800 px-3 py-2 text-sm font-medium">UMKM</a>
+                    <a href="#financial" class="text-gray-600 hover:text-red-800 px-3 py-2 text-sm font-medium">Keuangan</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-search text-gray-500 cursor-pointer"></i>
+                <i class="fas fa-shopping-cart text-gray-500 cursor-pointer"></i>
+                <i class="fas fa-user text-gray-500 cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat" 
+         style="background-image: url('Backround.png');">
+    
+    <!-- Overlay agar teks lebih kontras -->
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+    <!-- Konten -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+            Atur Keuangan, Mulai Bisnis, & Dapatkan Cuan!
+        </h1>
+        <p class="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+            Platform terbaik untuk mengelola keuangan dan mengembangkan bisnis UMKM di Yogyakarta. 
+            Bergabunglah dengan ribuan pengusaha sukses lainnya.
+        </p>
+        <div class="space-x-4">
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full text-lg font-semibold transition duration-300">
+                Gabung Sekarang
+            </button>
+            <button class="border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-3 rounded-full text-lg font-semibold transition duration-300">
+                Pelajari Lebih Lanjut
+            </button>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        SakuCuan adalah platform digital yang dibuat khusus untuk membantu para pelaku UMKM di Yogyakarta dalam mengelola keuangan dan mengembangkan bisnis mereka. Kami menyediakan tools yang mudah digunakan untuk tracking pengeluaran, monitoring pendapatan, dan marketplace untuk menjual produk UMKM berkualitas.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Dengan dukungan teknologi modern dan pemahaman mendalam tentang kebutuhan UMKM, kami berkomitmen untuk membantu setiap pengusaha mencapai kesuksesan finansial yang berkelanjutan.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-lg">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">500+</div>
+                            <div class="text-gray-600">UMKM Terdaftar</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600">1M+</div>
+                            <div class="text-gray-600">Transaksi</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-purple-600">50+</div>
+                            <div class="text-gray-600">Kategori Produk</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-600">24/7</div>
+                            <div class="text-gray-600">Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UMKM Locations Section -->
+    <section id="umkm" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Temukan Lokasi UMKM Yogya</h2>
+                <p class="text-gray-600">Jelajahi berbagai lokasi UMKM terbaik di Yogyakarta</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Teras Malioboro -->
+                <div class="product-card card-hover cursor-pointer" onclick="showLocationDetails('malioboro')">
+                <div class="h-48 overflow-hidden">
+                    <img src="Terasmalioboro.jpeg" alt="Teras Malioboro" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Teras Malioboro</h3>
+                    <p class="text-gray-600 mb-4">Pusat perbelanjaan dan kuliner di jantung Malioboro Street</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Jl. Malioboro, Yogyakarta</span>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Pasar Legi -->
+                <div class="product-card card-hover cursor-pointer" onclick="showLocationDetails('legi')">
+                <div class="h-48">
+                    <img src="Pasarlegikodagede.jpeg" alt="Pasar Legi Kotagede" class="w-full h-full object-cover rounded-t-lg">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Pasar Legi Kotagede</h3>
+                    <p class="text-gray-600 mb-4">Pasar tradisional dengan berbagai kerajinan perak dan batik</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        <span>Kotagede, Yogyakarta</span>
+                    </div>
+                </div>
+            </div>
+
+                <!-- Pasar Beringharjo -->
+                <div class="product-card card-hover cursor-pointer" onclick="showLocationDetails('beringharjo')">
+            <div class="h-48 overflow-hidden">
+                <img src="PasarBeringharjo.jpeg" alt="Pasar Beringharjo" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6">
+                <div class="text-center mb-4">
+                    <h3 class="text-xl font-bold text-gray-800">Pasar Beringharjo</h3>
+                </div>
+                <p class="text-gray-600 mb-4">Pasar tertua di Yogya dengan aneka batik dan oleh-oleh khas</p>
+                <div class="flex items-center text-sm text-gray-500">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>Jl. Ahmad Yani, Yogyakarta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Temukan Produk UMKM Yogya</h2>
+                <p class="text-gray-600">Produk berkualitas langsung dari pengrajin terbaik Yogyakarta</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Monggo Chocolate -->
+                <div class="product-card">
+                    <div class="h-40 overflow-hidden">
+                        <img src="Coklatmonggo.jpeg" alt="Monggo Chocolate" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-2">Monggo Chocolate</h3>
+                        <p class="text-sm text-gray-600 mb-3">Cokelat premium khas Yogyakarta dengan berbagai varian rasa</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-green-600">Rp 45.000</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">Beli</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Batik -->
+                <div class="product-card">
+                    <div class="h-40 overflow-hidden">
+                        <img src="batikyogya.jpeg" alt="Batik Yogya" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-2">Batik Yogya</h3>
+                        <p class="text-sm text-gray-600 mb-3">Batik tulis dan cap dengan motif klasik dan kontemporer</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-green-600">Rp 150.000</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">Beli</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wedang Uwuh -->
+                <div class="product-card">
+                    <div class="h-40 overflow-hidden">
+                        <img src="wedanguwuh.jpeg" alt="Wedang Uwuh" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-2">Wedang Uwuh</h3>
+                        <p class="text-sm text-gray-600 mb-3">Minuman tradisional Jogja dengan campuran rempah hangat</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-green-600">Rp 25.000</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">Beli</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bakpia Kukus -->
+                <div class="product-card">
+                    <div class="h-40 overflow-hidden">
+                        <img src="bakpiakukus.jpeg" alt="Bakpia Kukus" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-2">Bakpia Kukus</h3>
+                        <p class="text-sm text-gray-600 mb-3">Bakpia kukus khas Yogyakarta dengan rasa yang lezat</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold text-green-600">Rp 50.000</span>
+                            <button class="bg-blue-600 text-white px-3 py-1 rounded text-sm hover:bg-blue-700">Beli</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Dashboard Section -->
+    <section id="financial" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Layanan Fitur Keuangan</h2>
+                <p class="text-gray-600">Kelola keuangan bisnis Anda dengan mudah dan efisien</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 rounded-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-blue-100">Total Pendapatan</p>
+                            <p class="text-2xl font-bold">Rp 15.500.000</p>
+                        </div>
+                        <i class="fas fa-chart-line text-3xl text-blue-200"></i>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-green-100">Keuntungan Bersih</p>
+                            <p class="text-2xl font-bold">Rp 8.200.000</p>
+                        </div>
+                        <i class="fas fa-wallet text-3xl text-green-200"></i>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-orange-500 to-orange-600 p-6 rounded-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-orange-100">Total Pengeluaran</p>
+                            <p class="text-2xl font-bold">Rp 7.300.000</p>
+                        </div>
+                        <i class="fas fa-shopping-cart text-3xl text-orange-200"></i>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 rounded-lg text-white">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-purple-100">Transaksi Bulan Ini</p>
+                            <p class="text-2xl font-bold">247</p>
+                        </div>
+                        <i class="fas fa-exchange-alt text-3xl text-purple-200"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Chart Pendapatan -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-4">Grafik Pendapatan Bulanan</h3>
+                    <canvas id="revenueChart" width="400" height="200"></canvas>
+                </div>
+
+                <!-- Kategori Pengeluaran -->
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-lg font-semibold mb-4">Kategori Pengeluaran</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-red-500 rounded-full mr-3"></div>
+                                <span>Bahan Baku</span>
+                            </div>
+                            <span class="font-semibold">47%</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-blue-500 rounded-full mr-3"></div>
+                                <span>Operasional</span>
+                            </div>
+                            <span class="font-semibold">23%</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-green-500 rounded-full mr-3"></div>
+                                <span>Marketing</span>
+                            </div>
+                            <span class="font-semibold">18%</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="w-4 h-4 bg-yellow-500 rounded-full mr-3"></div>
+                                <span>Lainnya</span>
+                            </div>
+                            <span class="font-semibold">12%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                    <img src="logo2.png" alt="Logo SakuCuan" class="h-8 w-8">
+                        <span class="text-xl font-bold">SakuCuan</span>
+                    </div>
+                    <p class="text-gray-400">Atur Keuangan, Mulai Bisnis, & Dapatkan Cuan!</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">About SakuCuan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-white">Karir</a></li>
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Help & Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Pusat Bantuan</a></li>
+                        <li><a href="#" class="hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Sign Up</h4>
+                    <p class="text-gray-400 mb-4">Bergabung dengan newsletter kami</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Email" class="flex-1 px-4 py-2 rounded-l-lg text-gray-800">
+                        <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SakuCuan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
